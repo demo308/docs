@@ -1,0 +1,38 @@
+---
+sidebar_position: 2
+---
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+# About Replit
+
+We have a "Deploy to Replit" button for those people that like Replit ( Railway better ). We do not recommend using Replit.
+
+## Why is Replit bad for proxies?
+
+- They do not allow unblockers on their site
+- You can get banned if you choose to host a unblocker anyway
+- It is SLOW
+- Deployment takes a while
+- Railway is faster and also way better
+
+You are probably better off going <a onClick={() => window.history.back()}>back</a> and deploying this elsewhere.
+
+Or, watch this video that may or may not help you:
+
+<a href="https://www.youtube-nocookie.com/embed/H8ZH_mkfPUY?mute=1&autoplay=1">
+<img height="30px" src="https://img.shields.io/badge/RICKROLL-A6A9AA?style=for-the-badge&logoColor=white"></img>
+</a>
+
+## The Deploy Button
+
+By clicking the below button, I Acknowledge that I have read and understood the above text.
+<BrowserOnly>{() => (
+  <a onClick={() => {
+    const repo = new URLSearchParams(window.location.search).get('repo');
+    if(!repo) return alert('ERR! Something is wrong with your URL!');
+    window.location = `https://repl.it/github/amethystnetwork-dev/${repo}`
+  }}>
+    <img height="30px" src="https://amethystnetwork-dev.github.io/assets/replit.svg" />
+  </a>
+)}</BrowserOnly>
