@@ -42,7 +42,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/amethystnetwork-dev/docs/tree/main/docs/',
+          editUrl: 'https://github.com/amethystnetwork-dev/docs/tree/main/',
           routeBasePath: '/'
         },
         theme: {
