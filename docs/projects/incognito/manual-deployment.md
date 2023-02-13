@@ -28,24 +28,16 @@ This starts the bare server and serves the static files on port 8080 by default.
 
 ## Docker with NodeJS
 
-You will need: [NodeJS](https://nodejs.org) and [Docker](https://docker.com).
+You will need: [Docker](https://docker.com).
 
+You should use our official Docker image.
+
+To start, pull the image.
 ```bash
-git clone https://github.com/amethystnetwork-dev/Incognito
+docker pull ghcr.io/amethystnetwork-dev/incognito:latest
 ```
 
-Then CD into the repo:
-```bash
-cd Incognito
-```
-
-To create the dockerfile, run:
-
-```bash
-npm run create-dockerfile
-```
-
-And then you can start the docker container.
+And then you can create and start the docker container.
 
 ## Terminal with Deno
 
