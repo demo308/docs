@@ -74,6 +74,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/amethystnetwork-dev',
+              },
+              {
+                label: 'AlienHub',
+                href: 'https://alienhub.xyz/?utm_medium=amethystnetwork',
               }
             ],
           },
