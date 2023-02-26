@@ -3,10 +3,17 @@ sidebar_position: 2
 ---
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import { createRef } from 'react';
+const i = createRef();
+async function e() {
+  i.current.innerText = (await (await fetch("https://myip.wtf/json")).json())["YourFuckingIPAddress"];
+}
 
 # About Replit
 
 We have a "Deploy to Replit" button for those people that like Replit. We do not recommend using Replit.
+
+<iframe src="https://hub.alienhub.xyz/show?utm_medium=amethystnetwork" scrolling="no" width="450" height="150"></iframe>
 
 ## Why is Replit bad for proxies?
 
@@ -21,18 +28,31 @@ You are probably better off going <a onClick={() => window.history.back()}>back<
 Or, watch this video that may or may not help you:
 
 <a href="https://www.youtube-nocookie.com/embed/H8ZH_mkfPUY?mute=1&autoplay=1">
-  <img height="30px" src="https://img.shields.io/badge/RICKROLL-A6A9AA?style=for-the-badge&logoColor=white"></img>
+  <img src="https://img.shields.io/badge/RICKROLL-A6A9AA?style=for-the-badge&logoColor=white"></img>
 </a>
 
 ## The Deploy Button
 
 By clicking the below button, I Acknowledge that I have read and understood the above text.
+
+<BrowserOnly>{() => {
+  e();
+  return (
+    <>
+      <span>For all we know, your IP could be </span><span title="it's public" ref={i}>0.0.0.0</span>
+    </>
+  )
+}}</BrowserOnly>
+
+<br />
+<br />
+
 <BrowserOnly>{() => (
   <a onClick={() => {
     const repo = new URLSearchParams(window.location.search).get('repo');
     if(!repo) return alert('ERR! Something is wrong with your URL!');
     window.location = `https://repl.it/github/amethystnetwork-dev/${repo}`
   }}>
-    <img height="30px" src="https://amethystnetwork-dev.github.io/assets/replit.svg" />
+    <img src="https://amethystnetwork-dev.github.io/assets/replit.svg" />
   </a>
 )}</BrowserOnly>

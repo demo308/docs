@@ -8,15 +8,18 @@ Webretro is not included by default.
 
 To install webretro, use the install script:
 
+* Linux - `npm run install-webretro-linux`
+* Windows - `npm run install-webretro-win`
+
+:::note
+
+If you get a error that says `./src/webretro.sh: Permission denied`, run
+
 ```bash
-./webretro.sh
+chmod u+x ./src/webretro.sh
 ```
 
-
-If it says `./webretro.sh: Permission denied` run:
-```bash
-chmod u+x webretro.sh
-```
+:::
 
 You can add webretro ROMS to the games page just like normal games, but with this format instead
 
