@@ -6,7 +6,10 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import { createRef } from 'react';
 const i = createRef();
 async function e() {
-  i.current.innerText = (await (await fetch("https://myip.wtf/json")).json())["YourFuckingIPAddress"];
+  if(!i.current) return;
+  const res = await fetch("https://myip.wtf/json");
+  const json = await res.json();
+  i.current.innerText = json["YourFuckingIPAddress"]
 }
 
 # About Replit

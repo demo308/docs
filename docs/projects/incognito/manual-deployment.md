@@ -26,6 +26,8 @@ npm start
 
 This starts the bare server and serves the static files on port 8080 by default.
 
+Configuration docs are [here](/projects/incognito/#config)
+
 ## Docker with NodeJS
 
 You will need: [Docker](https://docker.com).
@@ -37,7 +39,7 @@ To start, pull the image.
 docker pull ghcr.io/amethystnetwork-dev/incognito:latest
 ```
 
-And then you can create and start the docker container.
+And then you can create and start a docker container.
 
 ## Terminal with Deno
 
