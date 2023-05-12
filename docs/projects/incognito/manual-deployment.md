@@ -39,7 +39,10 @@ To start, pull the image.
 docker pull ghcr.io/amethystnetwork-dev/incognito:latest
 ```
 
-And then you can create and start a docker container.
+And then you can start a docker container:
+```bash
+docker run -p 8080:8080 ghcr.io/amethystnetwork-dev/incognito
+```
 
 ## Terminal with Deno
 
