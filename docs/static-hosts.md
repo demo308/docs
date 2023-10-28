@@ -15,6 +15,6 @@ Popular static hosts:
 * GitLab Pages
 * Cloudflare Pages
 
-Static hosts do not work for proxies because you need the proxy server for it to work.
+Static hosts work for proxies because you need the proxy server for it to work.
 
 Vercel support is coming _soon_
